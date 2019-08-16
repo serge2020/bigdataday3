@@ -1,0 +1,563 @@
+
+0101	SOV	Sovereignty	Treason		Level 1
+0102	SOV	Sovereignty	Treason Misprision		Level 1
+0103	SOV	Sovereignty	Espionage		Level 1
+0104	SOV	Sovereignty	Sabotage		Level 1
+0105	SOV	Sovereignty	Sedition		Level 1
+0106	SOV	Sovereignty	Selective Service	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+0199	SOV	Sovereignty	Sovereignty		Level 1
+0201	MIL	Military	Military Desertion	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+0299	MIL	Military	Military	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+0301	IMMG	Immigration	Illegal Entry (8USC1325 only)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+0302	IMMG	Immigration	False Citizenship (False Statements, Fraud Marriage)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+0303	IMMG	Immigration	Smuggling Aliens		Level 1
+0399	IMMG	Immigration	Immigration (Possess of Fraud. Immigration Docs)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+03AA	IMMG	Immigration	Immigration (Trafficking of Fraud. Immigration Documents)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 1.	Level 1
+03AB	IMMG	Immigration	Illegal Re-Entry (8USC1326 only)		Level 2
+0901	HOM	Homicide	Homicide-Willful Kill-Family-Gun		Level 1
+0902	HOM	Homicide	Homicide-Willful Kill-Family-Weapon		Level 1
+0903	HOM	Homicide	Homicide-Willful Kill-Non-family-Gun		Level 1
+0904	HOM	Homicide	Homicide-Willful Kill-Non-family-Weapon		Level 1
+0905	HOM	Homicide	Homicide-Willful Kill-Public Official-Gun		Level 1
+0906	HOM	Homicide	Homicide-Willful Kill-Public Official-Weapon		Level 1
+
+
+0907	HOM	Homicide	Homicide-Willful Kill-Police Officer-Gun		Level 1
+0908	HOM	Homicide	Homicide-Willful Kill-Police Officer-Weapon		Level 1
+0909	HOM	Homicide	Homicide-Negligent Manslaughter-Vehicle		Level 2
+0910	HOM	Homicide	Homicide-Negligent Manslaughter-Weapon		Level 2
+0911	HOM	Homicide	Homicide-Willful Kill-Gun		Level 1
+0912	HOM	Homicide	Homicide-Willful Kill-Weapon		Level 1
+0913	HOM	Homicide	Homicide-John/Jane Doe-No Warr		Level 1
+0999	HOM	Homicide	Homicide	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1001	KID	Kidnapping	Kidnap Minor For Ransom	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1002	KID	Kidnapping	Kidnap Adult For Ransom	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1003	KID	Kidnapping	Kidnap Minor To Sexually Assault		Level 1
+1004	KID	Kidnapping	Kidnap Adult To Sexually Assault	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1005	KID	Kidnapping	Kidnap Minor	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1006	KID	Kidnapping	Kidnap Adult	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1007	KID	Kidnapping	Kidnap Hostage For Escape	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1008	KID	Kidnapping	Abduct-No Ransom or Assault		Level 1
+1009	KID	Kidnapping	Kidnap-Hijack Aircraft		Level 1
+1010	KID	Kidnapping	Kidnap Minor-Parental	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+1011	KID	Kidnapping	Kidnap Minor-Nonparental	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1020	KID	Kidnapping	False Imprisonment-Minor-Nonparental	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1021	KID	Kidnapping	False Imprisonment-Minor-Parental	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+1099	KID	Kidnapping	Kidnapping	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1101	SXA	Sexual Assault	Rape - Gun		Level 1
+1102	SXA	Sexual Assault	Rape With Weapon		Level 1
+1103	SXA	Sexual Assault	Rape - Strongarm		Level 1
+1104	SXA	Sexual Assault	Sex Assault - Sodomy-Boy-Gun		Level 1
+1105	SXA	Sexual Assault	Sex Assault - Sodomy-Man-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1106	SXA	Sexual Assault	Sex Assault - Sodomy-Girl-Gun		Level 1
+1107	SXA	Sexual Assault	Sex Assault - Sodomy-Woman-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1108	SXA	Sexual Assault	Sex Assault - Sodomy-Boy-Weapon		Level 1
+1109	SXA	Sexual Assault	Sex Assault - Sodomy-Man-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1110	SXA	Sexual Assault	Sex Assault - Sodomy-Girl-Weapon		Level 1
+1111	SXA	Sexual Assault	Sex Assault - Sodomy-Woman-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1112	SXA	Sexual Assault	Sex Assault - Sodomy-Boy-Strongarm		Level 1
+
+
+1113	SXA	Sexual Assault	Sex Assault - Sodomy-Man-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1114	SXA	Sexual Assault	Sex Assault - Sodomy-Girl-Strongarm		Level 1
+1115	SXA	Sexual Assault	Sex Assault - Sodomy-Woman-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1116	SXA	Sexual Assault	Statutory Rape - No Force	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1117	SXA	Sexual Assault	Sex Assault - Carnal Abuse	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1118	SXA	Sexual Assault	Rape - Elderly		Level 1
+1119	SXA	Sexual Assault	Rape - Disabled		Level 1
+1120	SXA	Sexual Assault	Sex Assault - Elderly		Level 1
+1121	SXA	Sexual Assault	Sex Assault - Disabled		Level 1
+1122	SXA	Sexual Assault	Rape - Drug-Induced		Level 1
+1123	SXA	Sexual Assault	Sexual Assault - Drug-Induced	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1198	SXA	Sexual Assault	Rape - Remarks		Level 1
+1199	SXA	Sexual Assault	Sex Assault	If the sexual assault occurred with a minor, then it's a Level 1.  If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present then it's a Level 1	Level 1
+1201	ROB	Robbery	Robbery - Business-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1202	ROB	Robbery	Robbery - Business Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+1203	ROB	Robbery	Robbery - Business-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1204	ROB	Robbery	Robbery - Street-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1205	ROB	Robbery	Robbery - Street-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1206	ROB	Robbery	Robbery - Street-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1207	ROB	Robbery	Robbery - Residence-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1208	ROB	Robbery	Robbery - Residence-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1209	ROB	Robbery	Robbery - Residence-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1210	ROB	Robbery	Forcible Purse Snatching	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1211	ROB	Robbery	Robbery - Banking-Type Institution	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1212	ROB	Robbery	Carjacking-Armed	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+1299	ROB	Robbery	Robbery	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1301	ASSL	Assault	Aggravated Assault - Family-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1302	ASSL	Assault	Aggravated Assault - Family-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1303	ASSL	Assault	Aggravated Assault - Family-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1304	ASSL	Assault	Aggravated Assault - Non-family-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1305	ASSL	Assault	Aggravated Assault - Non-family-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1306	ASSL	Assault	Aggravated Assault - Non-family-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1307	ASSL	Assault	Aggravated Assault - Public Officer-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1308	ASSL	Assault	Aggravated Assault - Public Officer-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1309	ASSL	Assault	Aggravated Assault - Public Officer-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+1310	ASSL	Assault	Aggravated Assault - Police Officer-Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1311	ASSL	Assault	Aggravated Assault - Police Officer-Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1312	ASSL	Assault	Aggravated Assault - Police Officer-Strongarm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1313	ASSL	Assault	Simple Assault	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1314	ASSL	Assault	Aggravated Assault - Gun	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1315	ASSL	Assault	Aggravated Assault - Weapon	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1316	ASSL	Assault	Intimidation	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1399	ASSL	Assault	Assault	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+1401	ABOR	Abortion	Abortional Act on Other	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1402	ABOR	Abortion	Abortional Act on Self	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+1403	ABOR	Abortion	Submission To Abortional Act	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1404	ABOR	Abortion	Abortifacient (selling, mfg., delivering, etc.)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1499	ABOR	Abortion	Abortion	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+1601	THRT	Threat	Threaten Federal Protectee	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+1602	THRT	Threat	Threat Terroristic State Offenses		Level 1
+1701	THRT	Threat	State/Local-Material Witness	If there is sentencing / conviction info, it is Level 3 ; If no sentence / conviction info, then the code is considered no crime (N/A)	NA
+1702	THRT	Threat	Federal-Material Witness	If there is sentencing / conviction info, it is Level 3 ; If no sentence / conviction info, then the code is considered no crime (N/A)	NA
+2001	ARS	Arson	Arson - Business-Endangered Life	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2002	ARS	Arson	Arson - Residence-Endangered Life	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2003	ARS	Arson	Arson - Business-Defraud Insurer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2004	ARS	Arson	Arson - Residence-Defraud Insurer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+2005	ARS	Arson	Arson - Business	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2006	ARS	Arson	Arson - Residence	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2007	ARS	Arson	Burning Of (Identify object in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2008	ARS	Arson	Arson - Public Building-Endangered Life	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2009	ARS	Arson	Arson - Public-Building	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2099	ARS	Arson	Arson	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2101	EXT	Extortion	Extortion - Threat Injure Person	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2102	EXT	Extortion	Extortion - Threat Damage Property		Level 2
+2103	EXT	Extortion	Extortion - Threat Injure Reputation		Level 2
+2104	EXT	Extortion	Extortion - Threat Accuse Person Of Crime		Level 2
+2105	EXT	Extortion	Extortion - Threat of Informing of Violence		Level 2
+2199	EXT	Extortion	Extortion		Level 2
+2201	BURG	Burglary	Burglary - Safe-Vault	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2202	BURG	Burglary	Burglary - Forced Entry-Residence	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+2203	BURG	Burglary	Burglary - Forced Entry-Non-Residence	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2204	BURG	Burglary	Burglary - No Forced Entry-Residence	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2205	BURG	Burglary	Burglary - No Forced Entry-Non-Residence	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2206	BURG	Burglary	Burglary Tools - Possession	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+2207	BURG	Burglary	Burglary - Banking-Type Institution	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2299	BURG	Burglary	Burglary	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2301	LARC	Larceny	Pocketpicking	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+2302	LARC	Larceny	Purse Snatching - No Force	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+2303	LARC	Larceny	Shoplifting	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+2304	LARC	Larceny	Larceny - Parts from Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+
+
+2305	LARC	Larceny	Larceny - From Auto	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2306	LARC	Larceny	Larceny - From Shipment	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2307	LARC	Larceny	Larceny - From Coin Machine	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2308	LARC	Larceny	Larceny - From Building	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2309	LARC	Larceny	Larceny - From Yards	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2310	LARC	Larceny	Larceny - From Mails	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2311	LARC	Larceny	Larceny - From Banking-Type Institution	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2312	LARC	Larceny	Larceny - From Interstate Shipment	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2313	LARC	Larceny	Obstruct Correspondence (postal violation)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2314	LARC	Larceny	Theft Of US Government Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+
+
+2315	LARC	Larceny	Larceny On US Government Reserves	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2316	LARC	Larceny	Larceny - Postal	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2399	LARC	Larceny	Larceny	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2401	SV	Stolen Vehicle	Theft And Sale Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2402	SV	Stolen Vehicle	Theft And Strip Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2403	SV	Stolen Vehicle	Theft And Use Vehicle Other Crime	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2404	SV	Stolen Vehicle	Vehicle Theft	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2405	SV	Stolen Vehicle	Theft Vehicle By Bailee	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2406	SV	Stolen Vehicle	Receiving Stolen Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2407	SV	Stolen Vehicle	Strip Stolen Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+
+
+2408	SV	Stolen Vehicle	Possession Stolen Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2409	SV	Stolen Vehicle	Interstate Transportation of Stolen Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2410	SV	Stolen Vehicle	Aircraft Theft	If the sentence is greater than 1 year, then it's a Level 1.  If the sentence is less than or equal to 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2411	SV	Stolen Vehicle	Unauthorized Use of Vehicle (includes joy riding)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+2499	SV	Stolen Vehicle	Stolen Vehicle	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2501	FORG	Forgery	Forgery Of Checks	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2502	FORG	Forgery	Forgery Of (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2503	FORG	Forgery	Counterfeiting Of (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2504	FORG	Forgery	Pass Forged (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2505	FORG	Forgery	Pass Counterfeited (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+
+
+2506	FORG	Forgery	Possession Forged (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2507	FORG	Forgery	Possession Counterfeited (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2508	FORG	Forgery	Possession Tools For Forgery/Counterfeiting	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2509	FORG	Forgery	Transport Forged (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2510	FORG	Forgery	Transport Counterfeited (identify in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2511	FORG	Forgery	Transport Tools For Forgery/Counterfeiting	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2589	FORG	Forgery	Forgery	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2599	FORG	Forgery	Counterfeiting	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2601	FA	Fraudulent Activities	Fraud - Confidence Game	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2602	FA	Fraudulent Activities	Fraud - Swindle	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2603	FA	Fraudulent Activities	Mail Fraud	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+
+
+2604	FA	Fraudulent Activities	Fraud - Impersonating	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2605	FA	Fraudulent Activities	Fraud - Illegal Use Credit Cards	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2606	FA	Fraudulent Activities	Fraud - Insufficient Funds Check	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2607	FA	Fraudulent Activities	Fraud - False Statement	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2608	FA	Fraudulent Activities	Fraud By Wire	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2609	FA	Fraudulent Activities	Fraud and Abuse - Computer	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2699	FA	Fraudulent Activities	Fraud	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 1.	Level 1
+2701	EMBZ	Embezzlement	Embezzle - Business Property	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+2702	EMBZ	Embezzlement	Embezzle - Interstate Shipment	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+2703	EMBZ	Embezzlement	Embezzle - Banking-Type Institution	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+2704	EMBZ	Embezzlement	Embezzle - Public Property (U.S., state, city property)	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+2705	EMBZ	Embezzlement	Embezzle - Postal	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+2799	EMBZ	Embezzlement	Embezzle	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. If amount is not available, then it's a Level 2.	Level 2
+
+
+2801	SP	Stolen Property	Sale Of Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2802	SP	Stolen Property	Transport Interstate Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+2803	SP	Stolen Property	Receive Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2804	SP	Stolen Property	Possession Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2805	SP	Stolen Property	Conceal Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2899	SP	Stolen Property	Stolen Property	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+2901	DP	Damage Property	Damage Property - Business	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+2902	DP	Damage Property	Damage Property - Private	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+2903	DP	Damage Property	Damage Property - Public	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+2904	DP	Damage Property	Damage Property - Business-With Explosive		Level 1
+2905	DP	Damage Property	Damage Property - Private-With Explosive		Level 1
+2906	DP	Damage Property	Damage Property - Public-With Explosive		Level 1
+
+
+2999	DP	Damage Property	Damage Property - Free Text	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3501		Dangerous Drugs	Hallucinogen – Mfr (NOT TO INCLUDE MARIJUANA)		Level 1
+3502		Dangerous Drugs	Hallucinogen - Distrib  (NOT TO INCLUDE MARIJUANA)		Level 1
+3503		Dangerous Drugs	Hallucinogen - Sell  (NOT TO INCLUDE MARIJUANA)		Level 1
+3504		Dangerous Drugs	Hallucinogen – Possess (not to include marijuana)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3505		Dangerous Drugs	Hallucinogen – (NOT TO INCLUDE MARIJUANA)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3510		Dangerous Drugs	Heroin - Sell		Level 1
+3511		Dangerous Drugs	Heroin - Smuggle		Level 1
+3512		Dangerous Drugs	Heroin - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3513		Dangerous Drugs	Heroin (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3520		Dangerous Drugs	Opium or Deriv - Sell 		Level 1
+3521		Dangerous Drugs	Opium or Deriv - Smuggle		Level 1
+3522		Dangerous Drugs	Opium or Deriv - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3523		Dangerous Drugs	Opium or Deriv (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3530		Dangerous Drugs	Cocaine - Sell		Level 1
+3531		Dangerous Drugs	Cocaine - Smuggle		Level 1
+3532		Dangerous Drugs	Cocaine - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3533		Dangerous Drugs	Cocaine (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3540		Dangerous Drugs	Synth Narcotic - Sell		Level 1
+3541		Dangerous Drugs	Synth Narcotic - Smuggle		Level 1
+3542		Dangerous Drugs	Synth Narcotic - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3543		Dangerous Drugs	Synth Narcotic (describe offense) 	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3550		Dangerous Drugs	Narcotic Equip - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3560		Dangerous Drugs	Marijuana - Sell		Level 1
+3561		Dangerous Drugs	Marijuana - Smuggle		Level 1
+3562		Dangerous Drugs	Marijuana - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3563		Dangerous Drugs	Marijuana - Producing		Level 1
+3564		Dangerous Drugs	Marijuana (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3570		Dangerous Drugs	Amphetamine - Mfr		Level 1
+3571		Dangerous Drugs	Amphetamine - Sell		Level 1
+3572		Dangerous Drugs	Amphetamine - Possess         	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3573		Dangerous Drugs	Amphetamine (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3580		Dangerous Drugs	Barbiturate - Mfr		Level 1
+3581		Dangerous Drugs	Barbiturate - Sell 		Level 1
+
+
+3582		Dangerous Drugs	Barbiturate - Possess	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3583		Dangerous Drugs	Barbiturate (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3599		Dangerous Drugs	Dangerous Drugs (describe offense)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3601	SOFF	Sex Offenses (Not Involving Ass	aSex Offense Against Child-Fondling		Level 1
+3602	SOFF	Sex Offenses (Not Involving Ass	aHomosexual Act With Girl		Level 1
+3603	SOFF	Sex Offenses (Not Involving Ass	aHomosexual Act With Boy		Level 1
+3604	SOFF	Sex Offenses (Not Involving Ass	aIncest With Minor		Level 1
+3605	SOFF	Sex Offenses (Not Involving Ass	aIndecent Exposure	If committed against a minor, then it's Level 1. If there is no indication if committed against minor, then it's a Level 2.	Level 2
+3606	SOFF	Sex Offenses (Not Involving Ass	aBestiality	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3607	SOFF	Sex Offenses (Not Involving Ass	aIncest With Adult	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3608	SOFF	Sex Offenses (Not Involving Ass	aSeduction Of Adult	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3609	SOFF	Sex Offenses (Not Involving Ass	aHomosexual Act With Woman	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3610	SOFF	Sex Offenses (Not Involving Ass	aHomosexual Act With Man	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3611	SOFF	Sex Offenses (Not Involving Ass	aPeeping Tom	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3612	SOFF	Sex Offenses (Not Involving Ass	aFailure To Register As A Sex Offender		Level 1
+3613	SOFF	Sex Offenses (Not Involving Ass	aSex Offender Registration Violation		Level 1
+3614	SOFF	Sex Offenses (Not Involving Ass	aIndecent Exposure to Minor		Level 1
+3615	SOFF	Sex Offenses (Not Involving Ass	aIndecent Exposure to Adult		Level 2
+3616	SOFF	Sex Offenses (Not Involving Ass	aLewd or Lascivious Acts with Minor		Level 1
+3617	SOFF	Sex Offenses (Not Involving Ass	aSexually Violate Human Remains/Necrophilia	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3618	SOFF	Sex Offenses (Not Involving Ass	aMolestation of Minor		Level 1
+3619	SOFF	Sex Offenses (Not Involving Ass	aVoyeurism	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3620	SOFF	Sex Offenses (Not Involving Ass	aSex Offense – Elderly		Level 2
+3621	SOFF	Sex Offenses (Not Involving Ass	aSex Offense – Disabled		Level 2
+3622	SOFF	Sex Offenses (Not Involving Ass	aTransport Interstate for Sexual Activity	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 2.	Level 2
+3699	SOFF	Sex Offenses (Not Involving Ass	aSex Offense	If the sexual assault occurred with a minor, then it's a Level 1. If the sexual assault did not occur with a minor, then it's a Level 2.	Level 2
+3700	OBSC	Obscenity	Obscene Material	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3701	OBSC	Obscenity	Obscene Material - Manufacturing	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3702	OBSC	Obscenity	Obscene Material - Sell	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3703	OBSC	Obscenity	Obscene Material - Mailing	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3704	OBSC	Obscenity	Obscene Material - Possession	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3705	OBSC	Obscenity	Obscene Material - Distribution	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3706	OBSC	Obscenity	Obscene Material - Transport	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3707	OBSC	Obscenity	Obscene Communication	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3799	OBSC	Obscenity	Obscene	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3801	FO	Family Offenses	Neglect Family	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3802	FO	Family Offenses	Cruelty Toward Child	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+3803	FO	Family Offenses	Cruelty Toward Wife	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+3804	FO	Family Offenses	Bigamy	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3805	FO	Family Offenses	Contributing to Delinquency of Minor	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3806	FO	Family Offenses	Neglect Child	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3807	FO	Family Offenses	Non-payment of Alimony	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3808	FO	Family Offenses	Non-support of Parent	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3809	FO	Family Offenses	Cruelty Toward Elderly	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+3810	FO	Family Offenses	Cruelty Toward Disabled	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 1.	Level 1
+3811	FO	Family Offenses	Neglect Elderly	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3812	FO	Family Offenses	Neglect Disabled	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3899	FO	Family Offenses	Family Offense	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+3901	GAMB	Gambling	Bookmaking	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3902	GAMB	Gambling	Card Game - Operating	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3904	GAMB	Gambling	Card Game	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3905	GAMB	Gambling	Dice Game - Operating	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3907	GAMB	Gambling	Dice Game	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3908	GAMB	Gambling	Gambling Device - Possession	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3909	GAMB	Gambling	Gambling Device - Transport	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3910	GAMB	Gambling	Gambling Device - Not Registered	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3911	GAMB	Gambling	Gambling Device	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3912	GAMB	Gambling	Gambling Goods - Possession	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3913	GAMB	Gambling	Gambling Goods - Transport	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+3914	GAMB	Gambling	Gambling Goods	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3915	GAMB	Gambling	Lottery - Operating	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3916	GAMB	Gambling	Lottery - Runner	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3918	GAMB	Gambling	Lottery	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3919	GAMB	Gambling	Sports Tampering	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3920	GAMB	Gambling	Transmit Wager Information	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3921	GAMB	Gambling	Establish Gambling Place	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+3999	GAMB	Gambling	Gambling	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4001	CSOFF	Commercialized Sexual Offenses	Keeping House Ill Fame		Level 1
+4002	CSOFF	Commercialized Sexual Offenses	Procure For Prostitute (pimping)		Level 1
+4003	CSOFF	Commercialized Sexual Offenses	Commercial Sex - Homosexual Prostitution	If the sentence is greater than 1 year, then it's a Level 1.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4004	CSOFF	Commercialized Sexual Offenses	Prostitution	If the sentence is greater than 1 year, then it's a Level 1.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+4005	CSOFF	Commercialized Sexual Offenses	Frequent House Ill Fame	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+4006	CSOFF	Commercialized Sexual Offenses	Transport Female Interstate for Immoral Purposes	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4007	CSOFF	Commercialized Sexual Offenses	Procure for Prostitute Who Is a Minor		Level 1
+4008	CSOFF	Commercialized Sexual Offenses	Procure for Prostitute Who is an Adult	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4009	CSOFF	Commercialized Sexual Offenses	Transport Interstate for Commercialized Sex		Level 1
+4099	CSOFF	Commercialized Sexual Offenses	Commercial Sex	If the sentence is greater than 1 year, then it's a Level 1.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4101	LIQ	Liquor	Liquor - Manufacturing	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4102	LIQ	Liquor	Liquor - Sell	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4103	LIQ	Liquor	Liquor - Transport	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4104	LIQ	Liquor	Liquor - Possession	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+4199	LIQ	Liquor	Liquor	If the sentence is greater than 1 year, then it's a Level 2.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4801	OP	Obstructing the Police	Resisting Officer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+
+
+4802	OP	Obstructing the Police	Obstruct Criminal Invest	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4803	OP	Obstructing the Police	Making False Report	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4804	OP	Obstructing the Police	Evidence - Destroying	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4805	OP	Obstructing the Police	Witness - Dissuading	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4806	OP	Obstructing the Police	Witness - Deceiving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4807	OP	Obstructing the Police	Refusing To Aid Officer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4808	OP	Obstructing the Police	Compounding Crime	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4809	OP	Obstructing the Police	Unauthorized Communication With Prisoner	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4810	OP	Obstructing the Police	Illegal Arrest	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4811	OP	Obstructing the Police	Crossing Police Lines	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+4812	OP	Obstructing the Police	Failure Report Crime	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4813	OP	Obstructing the Police	Failing to Move On	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4899	OP	Obstructing the Police	Obstruct Police	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+4901	FLT	Flight - Escape	Escape (identify type institution in comments)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+4902	FLT	Flight - Escape	Flight To Avoid (prosecution, confinement, etc.)	Recommend Offense Level based on predicate charge. For example, if the predicate charge is Murder, then the recommend Offense Level is 1.	Level 1
+4903	FLT	Flight - Escape	Aiding Prisoner Escape	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+4904	FLT	Flight - Escape	Harboring Escapee/Fugitive	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+4999	FLT	Flight - Escape	Flight - Escape	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5001	OOBS	Obstructing Judiciary, Congress,	 Bail - Secured Bond	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5002	OOBS	Obstructing Judiciary, Congress,	 Bail - Personal Recognizance	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5003	OOBS	Obstructing Judiciary, Congress,	 Perjury	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5004	OOBS	Obstructing Judiciary, Congress,	 Perjury - Subornation Of	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5005	OOBS	Obstructing Judiciary, Congress,	 Contempt Of Court	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5006	OOBS	Obstructing Judiciary, Congress,	 Obstructing Justice	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5007	OOBS	Obstructing Judiciary, Congress,	 Obstructing Court Order	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5008	OOBS	Obstructing Judiciary, Congress,	 Misconduct - Judicial Officer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5009	OOBS	Obstructing Judiciary, Congress,	 Contempt Of Congress	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5010	OOBS	Obstructing Judiciary, Congress,	 Contempt Of Legislature	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5011	OOBS	Obstructing Judiciary, Congress,	 Parole Violation	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5012	OOBS	Obstructing Judiciary, Congress,	 Probation Violation	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5013	OOBS	Obstructing Judiciary, Congress,	 Conditional Release Violation	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5014	OOBS	Obstructing Judiciary, Congress,	 Mandatory Release Violation	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5015	OOBS	Obstructing Judiciary, Congress,	 Failure To Appear	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5016	OOBS	Obstructing Judiciary, Congress,	 Violation of a Court Order	If the sentence is greater than 1 year, then it's a Level 1.  If the sentence is less than or equal to 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5099	OOBS	Obstructing Judiciary, Congress,	 Obstruct (specify Judiciary, Congress in comments)	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5101	BRIB	Bribery	Bribe - Giving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5102	BRIB	Bribery	Bribe - Offering	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5103	BRIB	Bribery	Bribe - Receiving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5104	BRIB	Bribery	Bribe	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5105	BRIB	Bribery	Conflict Of Interest	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5106	BRIB	Bribery	Gratuity - Giving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5107	BRIB	Bribery	Gratuity - Offering	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5108	BRIB	Bribery	Gratuity - Receiving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5109	BRIB	Bribery	Gratuity	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5110	BRIB	Bribery	Kickback - Giving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5111	BRIB	Bribery	Kickback - Offering	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5112	BRIB	Bribery	Kickback - Receiving	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5113	BRIB	Bribery	Kickback	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5199	BRIB	Bribery	Bribery	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5201	WO	Weapon Offenses	Altering Identification On Weapon		Level 1
+5202	WO	Weapon Offenses	Carrying Concealed Weapon	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+
+
+5203	WO	Weapon Offenses	Carrying Prohibited Weapon	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+5204	WO	Weapon Offenses	Explosives - Teaching Use		Level 1
+5205	WO	Weapon Offenses	Explosives - Transporting		Level 1
+5206	WO	Weapon Offenses	Explosives - Using		Level 1
+5207	WO	Weapon Offenses	Incendiary Device - Possession		Level 1
+5208	WO	Weapon Offenses	Incendiary Device - Using		Level 1
+5209	WO	Weapon Offenses	Incendiary Device - Teaching Use		Level 1
+5210	WO	Weapon Offenses	Licensing - Registration Weapon	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+5211	WO	Weapon Offenses	Explosives - Possession		Level 1
+5212	WO	Weapon Offenses	Possession Of Weapon	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+5213	WO	Weapon Offenses	Firing Weapon	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+5214	WO	Weapon Offenses	Selling Weapon		Level 1
+5215	WO	Weapon Offenses	Threat To Bomb	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5216	WO	Weapon Offenses	Threat To Burn	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2.  If no sentence information is present, then it's a Level 2.	Level 2
+5217	WO	Weapon Offenses	Weapon Trafficking		Level 1
+5299	WO	Weapon Offenses	Weapon Offense	If the subject is a prior convicted felon, then it is an ICE Offense Level 1. If the subject is not a prior convicted felon, then it is an ICE Offense Level 2.	Level 1
+5301	PP	Public Peace	Anarchism	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5302	PP	Public Peace	Riot - Inciting	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5303	PP	Public Peace	Riot - Engaging in	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5304	PP	Public Peace	Riot - Interfere Firearm	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5305	PP	Public Peace	Riot - Interfere Officer	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5306	PP	Public Peace	Riot	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5307	PP	Public Peace	Assembly - Unlawful	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5309	PP	Public Peace	Harassing Communication	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5310	PP	Public Peace	Desecrating Flag	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5311	PP	Public Peace	Disorderly Conduct	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5399	PP	Public Peace	Public Peace	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5401	TO	Traffic Offenses	Hit and Run		Level 2
+5402	TO	Traffic Offenses	Transporting Dangerous Material	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5403	TO	Traffic Offenses	Driving Under Influence Drugs	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5404	TO	Traffic Offenses	Driving Under Influence Liquor	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5499	TO	Traffic Offenses	Traffic Offense	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5501	HSAF	Health - Safety	Drugs - Adulterated	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5502	HSAF	Health - Safety	Drugs - Misbranded	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5503	HSAF	Health - Safety	Drugs - Health or Safety	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5510	HSAF	Health - Safety	Food - Adulterated	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5511	HSAF	Health - Safety	Food - Misbranded	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5512	HSAF	Health - Safety	Food - Health or Safety	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5520	HSAF	Health - Safety	Cosmetics - Adulterated	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5521	HSAF	Health - Safety	Cosmetics - Misbranded	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5522	HSAF	Health - Safety	Cosmetics - Health or Safety	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5599	HSAF	Health - Safety	Health - Safety	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5699	CR	Civil Rights	Civil Rights	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 3.  If no sentence information is present, then it's a Level 3.	Level 3
+5701	IP	Invasion of Privacy	Divulge Eavesdrop Information	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5702	IP	Invasion of Privacy	Divulge Eavesdrop Order	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5703	IP	Invasion of Privacy	Divulge Message Contents	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5704	IP	Invasion of Privacy	Eavesdropping	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5705	IP	Invasion of Privacy	Eavesdrop Equipment	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5706	IP	Invasion of Privacy	Opening Sealed Communication	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+5707	IP	Invasion of Privacy	Trespassing	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5708	IP	Invasion of Privacy	Wiretap - Failure To Report	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5799	IP	Invasion of Privacy	Invade Privacy	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5801	SMG	Smuggling	Smuggle Contraband	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5802	SMG	Smuggling	Smuggle Contraband Into Prison	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5803	SMG	Smuggling	Smuggle To Avoid Paying Duty	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5899	SMG	Smuggling	Smuggling	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+5999	EL	Election Laws	Election Laws	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6099	ANT	Antitrust	Antitrust	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 3.  If amount is not available, then it's a Level 3.	Level 3
+6101	TR	Tax Revenue	Income Tax	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 3. If amount is not available, then it's a Level 3.	Level 3
+6102	TR	Tax Revenue	Sales Tax	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 3. If amount is not available, then it's a Level 3.	Level 3
+
+
+6103	TR	Tax Revenue	Liquor Tax	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 3. If amount is not available, then it's a Level 3.	Level 3
+6199	TR	Tax Revenue	Tax Revenue	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 3. Default to a Level 3.	Level 3
+6201	CONSV	Conservation	Conservation - Animals	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6202	CONSV	Conservation	Conservation - Fish	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6203	CONSV	Conservation	Conservation - Birds	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6204	CONSV	Conservation	Conservation - License-Stamp	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6205	CONSV	Conservation	Conservation - Environment	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6299	CONSV	Conservation	Conservation	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+6300		Money Laundering	Money Laundering-Remarks	If the loss is greater than 10k, then it's a Level 1.  If the loss is less than or equal to 10k, then it's a Level 2. Default to a Level 2.	Level 2
+6400		Exploitation/Enticement	Exploitation of a Minor		Level 1
+6401		Exploitation/Enticement	Sexual Exploitation of Minor - Material - Transport		Level 1
+6402		Exploitation/Enticement	Sexual Exploitation of Minor - Material - Photograph		Level 1
+6403		Exploitation/Enticement	Sexual Exploitation of Minor - Material - Film		Level 1
+6404		Exploitation/Enticement	Sexual Exploitation of Minor - Exhibition of Minor		Level 1
+6405		Exploitation/Enticement	Sexual Exploitation of Minor - Sex Performance		Level 1
+6406		Exploitation/Enticement	Sexual Exploitation of Minor - Via Telecommunications		Level 1
+6407		Exploitation/Enticement	Sexual Exploitation of Minor - Prostitution		Level 1
+
+
+6408		Exploitation/Enticement	Enticement of Minor for Indecent Purposes – via Telecommunications		Level 1
+6409		Exploitation/Enticement	Enticement of Minor for Prostitution		Level 1
+6410		Exploitation/Enticement	Enticement of Minor for Indecent Purposes		Level 1
+6499		Exploitation/Enticement	Exploitation/Enticement (Use the MIS Field to further describe offense)		Level 1
+7099	GCRIM	General Crimes	Crimes Against Person		Level 2
+7199	GCRIM	General Crimes	Property Crimes	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+7299	GCRIM	General Crimes	Morals - Decency Crimes	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+7399	GCRIM	General Crimes	Public Order Crimes	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+8100	JO	Juvenile Offenders	Escape From Custody	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+8101	JO	Juvenile Offenders	Abscond While On Parole	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+8102	JO	Juvenile Offenders	Abscond While On Probation	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+09AA	HOM	Homicide	Voluntary – Manslaughter	If the sentence is greater than or equal to 1 year, then it's a Level 1.  If the sentence is less than 1 year, then it's a Level 2. If no sentence information is present, then it's a Level 2.	Level 2
+10AA	KID	Kidnapping	False Imprisonment	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+13AA	ASSL	Assault	Battery 	If the sentence is greater than 1 year, then it's a Level 1. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+13AB	ASSL	Assault	Domestic Violence	If the sentence is greater than 1 year, then it's a Level 1. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+35AA		Dangerous Drugs	Drug Possession	If the sentence is greater 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+35AB		Dangerous Drugs	Drug Trafficking		Level 1
+52AA	WO	Weapon Offenses	Body Armor (possession or use in furtherance of crime)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 2.	Level 2
+63AA			Structuring		Level 1
+70AA			Identity Theft	If the sentence is greater than or equal to 1 year, then it's a Level 1. If the sentence is less than 1 year, then it's a Level 2. If no sentence information is present, then it's a Level 2.	Level 2
+70AB			Deceptive Business Practices (to include False Advertising)	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to  1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+72AA			Government Official Not Performing Duties	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to  1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+74AA			Racketeer Influenced and Corrupt Organizations Act (RICO)		Level 1
+75AA			Human Slavery or Trafficking		Level 1
+76AA			Terrorism		Level 1
+77AA			Gang Activity	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to  1 year, then it's a Level 3. If no sentence information is present, then it's a Level 2.	Level 2
+79AA			Licensing Violation	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+
+
+90AA			Aiding and Abetting	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AA			Solicitation	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AB			Accessory After the Fact	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AC			Accessory Before the Fact	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AD			Attempt to Commit	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AE			Facilitation of	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AF			Threat to Commit	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+91AG			Conspiracy to Commit	Recommend offense level based on predicate charge; if no predicate charge, flag for review.	
+92AA			Conspiracy [use when no underlying offense, such as 18 U.S.C. SEC. 371]	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to  1 year, then it's a Level 3. If no sentence information is present, then it's a Level 2.	Level 2
+93AA			Computer Crimes	If the sentence is greater than 1 year, then it's a Level 2. If the sentence is less than or equal to 1 year, then it's a Level 3. If no sentence information is present, then it's a Level 3.	Level 3
+PRO1			Two or more Level 2 convictions	Two or more Level 2 convictions = Level 1	Level 1
+PRO2			Three or more Level 3 convictions	Three or more Level 3 convictions = Level 2	Level 2
+
