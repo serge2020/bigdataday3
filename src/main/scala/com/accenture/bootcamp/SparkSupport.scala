@@ -17,7 +17,7 @@ trait SparkSupport {
   val spark: SparkSession = SparkSession
     .builder()
     .appName("test")
-    .config("spark.master", "local")
+    .config("spark.master", "local[*]")
     .getOrCreate()
   protected val sc: SparkContext = spark.sparkContext
 

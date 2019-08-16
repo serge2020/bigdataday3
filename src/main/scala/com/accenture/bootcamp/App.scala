@@ -7,6 +7,12 @@ import org.apache.spark.rdd.RDD
 import scala.language.postfixOps
 import Utils._
 
+import org.apache.spark.sql.SparkSession
+
+
+
+
+
 object App extends SparkSupport {
 
 
@@ -163,6 +169,8 @@ object App extends SparkSupport {
 
     // TODO: pre process crimesDB here
 
+    // I will test if datafames will be better performing joins and spark.sql queries
+
     case class Crime(code: String, code2: String, category: String, subcategory: String, level: String)
     case class CommitedCrime(cdatetime: String, address: String, district: String, beat: String, grid: String, crimedescr: String, ucr_ncic_code: String, latitude: String, longitude: String)
 
@@ -175,6 +183,14 @@ object App extends SparkSupport {
       Crime(cols(0), cols(1), cols(2), cols(3), cols(4))
     })
 
+    // creating crimes classification dataframe
+    val crimeswCols = crimes.map(crime => (crime.code, crime.code2, crime.category, crime.subcategory, crime.level))
+
+
+    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a1", "a2", "a3", "a4").persist()
+
+
+    println(dfCrimes.columns)
     var idx = 0
 
     // This function does processing and saving of data
@@ -189,24 +205,41 @@ object App extends SparkSupport {
       val codesCommited = commited.map(line => {
         val cols = line.split(",")
         // column 6 contains code
-        (cols(6), CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
+        (CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
       })
 
-      // combine each CommitedCrime with corresponding Crime by it's code
-      val joinedCrimes = crimes.map(crime => (crime.code, crime)).join(codesCommited)
+      val committedwCols = codesCommited.map(commitedCrime =>
+        (commitedCrime.ucr_ncic_code, commitedCrime.cdatetime, commitedCrime.address,
+          commitedCrime.district, commitedCrime.beat, commitedCrime.grid, commitedCrime.crimedescr,
+          commitedCrime.ucr_ncic_code, commitedCrime.latitude, commitedCrime.longitude))
+
+      // creating commited crimes dataframe
+      val dfCommitted2 = spark.createDataFrame(committedwCols).toDF("id", "b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9")
+      val dfCommitted = dfCommitted2.repartition(2).persist() // there are 6 districts with evenly split records but results were slower than with 2
+
+      // println(dfCommitted.columns)
+
+      val joinedCrimes = dfCommitted.join(dfCrimes, "id")
+      //println(joinedCrimes.show())
+
+      joinedCrimes.createOrReplaceTempView("crimesTemp")
+
+
+      val resultdf = spark.sql("""
+        SELECT b3 AS district, a2 AS category, COUNT(id)
+        FROM crimesTemp
+        GROUP BY district, category
+        """
+      )
+      val result = resultdf.rdd
+
 
       // Store files in FS.
-      joinedCrimes.map { case (_, (crime, commitedCrime)) => (commitedCrime.district, crime.category) }
-        .reduceByKey(_ + "," + _)
-        .saveAsTextFile("output/" + System.nanoTime() + "_output" + idx)
+      result.saveAsTextFile("output/" + System.nanoTime() + "_output" + idx)
       idx += 1
 
+      print(resultdf.show())
 
-      //val result: RDD[String] = ???
-
-/*      // Store results
-      result.saveAsTextFile("output/" + System.nanoTime() + "_output" + idx)
-      idx += 1*/
     }
 
 
@@ -262,6 +295,9 @@ object App extends SparkSupport {
 
 
 
+
+
+
     // TODO: check perfromance optimalCode1, optimalCode11
     // TODO: check performance unoptimalCode2, optimalCode2
     /*
@@ -271,8 +307,8 @@ object App extends SparkSupport {
                    no significant changes after changing reduceByKey to aggregateByKey
 
 
-
-
+    optimalCode2:  joining Spark DataFrames and running sql query had significantly slower
+                   performance than RDD operations. Time difference - 26087577718 ns.
 
      */
 
