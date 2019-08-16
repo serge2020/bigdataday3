@@ -233,7 +233,7 @@ object App extends SparkSupport {
       )
       val result = resultdf.rdd
 
-
+       /**/
       // Store files in FS.
       result.saveAsTextFile("output/" + System.nanoTime() + "_output" + idx)
       idx += 1
