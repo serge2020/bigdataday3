@@ -6,6 +6,7 @@ import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.SparkSession
 
+
 trait SparkSupport {
 
   System.setProperty("hadoop.home.dir", new File(".").getAbsolutePath )
@@ -19,6 +20,7 @@ trait SparkSupport {
     .appName("test")
     .config("spark.master", "local[*]")
     .getOrCreate()
+
   protected val sc: SparkContext = spark.sparkContext
 
 }

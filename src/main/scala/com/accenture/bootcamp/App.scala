@@ -6,8 +6,10 @@ import org.apache.spark.rdd.RDD
 
 import scala.language.postfixOps
 import Utils._
+import org.apache.spark.sql.functions.col
 
 import org.apache.spark.sql.SparkSession
+
 
 
 
@@ -169,7 +171,7 @@ object App extends SparkSupport {
 
     // TODO: pre process crimesDB here
 
-    // I will test if datafames will be better performing joins and spark.sql queries
+    // I will test if datafames will do better than rdd performing joins and spark.sql queries
 
     case class Crime(code: String, code2: String, category: String, subcategory: String, level: String)
     case class CommitedCrime(cdatetime: String, address: String, district: String, beat: String, grid: String, crimedescr: String, ucr_ncic_code: String, latitude: String, longitude: String)
@@ -184,13 +186,18 @@ object App extends SparkSupport {
     })
 
     // creating crimes classification dataframe
-    val crimeswCols = crimes.map(crime => (crime.code, crime.code2, crime.category, crime.subcategory, crime.level))
+/*    val crimeswCols = crimes.map(crime => (crime.code, crime.code2, crime.category, crime.subcategory, crime.level))
 
 
-    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a1", "a2", "a3", "a4").persist()
+    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a1", "a2", "a3", "a4").persist()*/
+
+    val crimeswCols = crimes.map(crime => (crime.code, crime.category))
 
 
-    println(dfCrimes.columns)
+    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a2").persist()
+
+
+
     var idx = 0
 
     // This function does processing and saving of data
@@ -208,15 +215,23 @@ object App extends SparkSupport {
         (CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
       })
 
-      val committedwCols = codesCommited.map(commitedCrime =>
+      /*val committedwCols = codesCommited.map(commitedCrime =>
         (commitedCrime.ucr_ncic_code, commitedCrime.cdatetime, commitedCrime.address,
           commitedCrime.district, commitedCrime.beat, commitedCrime.grid, commitedCrime.crimedescr,
           commitedCrime.ucr_ncic_code, commitedCrime.latitude, commitedCrime.longitude))
 
       // creating commited crimes dataframe
       val dfCommitted2 = spark.createDataFrame(committedwCols).toDF("id", "b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9")
-      val dfCommitted = dfCommitted2.repartition(2).persist() // there are 6 districts with evenly split records but results were slower than with 2
+      */
 
+      val committedwCols = codesCommited.map(commitedCrime =>
+        (commitedCrime.ucr_ncic_code, commitedCrime.district))
+
+      // creating commited crimes dataframe
+      val dfCommitted2 = spark.createDataFrame(committedwCols).toDF("id", "b3")
+
+      /*val dfCommitted = dfCommitted2.repartition(5).persist() // there are 6 districts with evenly split records but results were slower than with 2*/
+      val dfCommitted = dfCommitted2.repartitionByRange(6, col("b3"))
       // println(dfCommitted.columns)
 
       val joinedCrimes = dfCommitted.join(dfCrimes, "id")
@@ -238,7 +253,7 @@ object App extends SparkSupport {
       result.saveAsTextFile("output/" + System.nanoTime() + "_output" + idx)
       idx += 1
 
-      print(resultdf.show())
+      //print(resultdf.show())
 
     }
 
@@ -265,7 +280,7 @@ object App extends SparkSupport {
 
     // read text into RDD
     val crimeCategories:RDD[String] = sc.textFile(filePath("ucr_ncic_codes.tsv"))
-    println("Task #1")
+    println("Task #2")
 
     val commitedCrimes = sc.textFile(filePath("SacramentocrimeJanuary2006.csv"))
 
@@ -291,7 +306,7 @@ object App extends SparkSupport {
 
     println()
     println("Performance difference between initial and optimised code is ")
-    println(t1 - t2 + " ns")
+    println((t1 - t2)/1e+9 + " seconds")
 
 
 
@@ -308,7 +323,9 @@ object App extends SparkSupport {
 
 
     optimalCode2:  joining Spark DataFrames and running sql query had significantly slower
-                   performance than RDD operations. Time difference - 26087577718 ns.
+                   performance than RDD operations. Time difference ~ -23 seconds.
+                   When I applied repartitionByRange difference decreased to -9 seconds.
+                   Adding persist() to dataframes did not improve the results.
 
      */
 
