@@ -1,13 +1,12 @@
 package com.accenture.bootcamp
 
-import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.{SparkConf, SparkContext, rdd}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.rdd.RDD
 
 import scala.language.postfixOps
 import Utils._
 import org.apache.spark.sql.functions.col
-
 import org.apache.spark.sql.SparkSession
 
 
@@ -137,8 +136,9 @@ object App extends SparkSupport {
         (cols(6), CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
       })
 
+
       // combine each CommitedCrime with corresponding Crime by it's code
-      val joinedCrimes = crimes.map(crime => (crime.code, crime)).join(codesCommited)
+     val joinedCrimes = crimes.map(crime => (crime.code, crime)).join(codesCommited)
 
       // Store files in FS.
       joinedCrimes.map { case (_, (crime, commitedCrime)) => (commitedCrime.district, crime.category) }
@@ -180,10 +180,12 @@ object App extends SparkSupport {
     val nonEmptyLines = crimesDb.filter(_.nonEmpty)
 
     // create RDD[Crime]
-    val crimes = nonEmptyLines.map(line => {
+    val crimes: RDD[(String, String)] = nonEmptyLines.map(line => {
       val cols = line.split("\t")
       Crime(cols(0), cols(1), cols(2), cols(3), cols(4))
     })
+      .map { case crime => (crime.code, crime.category) }
+/*
 
     // creating crimes classification dataframe
 /*    val crimeswCols = crimes.map(crime => (crime.code, crime.code2, crime.category, crime.subcategory, crime.level))
@@ -196,6 +198,7 @@ object App extends SparkSupport {
 
     val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a2").persist()
 
+*/
 
 
     var idx = 0
@@ -208,13 +211,33 @@ object App extends SparkSupport {
       // TODO: resulting RDD assign to result value
 
 
-      // Map commited crimes with it's codes
+ /*     // Map commited crimes with it's codes
       val codesCommited = commited.map(line => {
         val cols = line.split(",")
         // column 6 contains code
         (CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
-      })
+      })*/
 
+      val districtCategories: RDD[(String, String)] = commited.map(line => {
+        val cols = line.split(",")
+        // column 6 contains code
+        (cols(6), CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
+      })
+        .map { case (commitedCrime) => (commitedCrime._1, commitedCrime._2.district) }
+        .coalesce(6,false)
+        .join(crimes)
+        .map { case rdd => (rdd._2._1, rdd._2._2)}
+
+
+        //: Map[String, Long]
+
+      val dcCount = districtCategories.reduceByKey(_ + "," + _, 6)
+
+
+
+      //val joinedCrimes: RDD[(String, String)] = crimesCommited.join(crimes)
+       // .map { case rdd => (rdd._2._1, rdd._2._2)}
+/*
       /*val committedwCols = codesCommited.map(commitedCrime =>
         (commitedCrime.ucr_ncic_code, commitedCrime.cdatetime, commitedCrime.address,
           commitedCrime.district, commitedCrime.beat, commitedCrime.grid, commitedCrime.crimedescr,
@@ -245,8 +268,8 @@ object App extends SparkSupport {
         FROM crimesTemp
         GROUP BY district, category
         """
-      )
-      val result = resultdf.rdd
+      )*/
+      val result = dcCount
 
        /**/
       // Store files in FS.
