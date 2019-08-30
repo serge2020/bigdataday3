@@ -171,7 +171,6 @@ object App extends SparkSupport {
 
     // TODO: pre process crimesDB here
 
-    // I will test if datafames will do better than rdd performing joins and spark.sql queries
 
     case class Crime(code: String, code2: String, category: String, subcategory: String, level: String)
     case class CommitedCrime(cdatetime: String, address: String, district: String, beat: String, grid: String, crimedescr: String, ucr_ncic_code: String, latitude: String, longitude: String)
@@ -185,21 +184,6 @@ object App extends SparkSupport {
       Crime(cols(0), cols(1), cols(2), cols(3), cols(4))
     })
       .map { case crime => (crime.code, crime.category) }
-/*
-
-    // creating crimes classification dataframe
-/*    val crimeswCols = crimes.map(crime => (crime.code, crime.code2, crime.category, crime.subcategory, crime.level))
-
-
-    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a1", "a2", "a3", "a4").persist()*/
-
-    val crimeswCols = crimes.map(crime => (crime.code, crime.category))
-
-
-    val dfCrimes = spark.createDataFrame(crimeswCols).toDF("id", "a2").persist()
-
-*/
-
 
     var idx = 0
 
@@ -209,14 +193,6 @@ object App extends SparkSupport {
       // TODO: join commitedCrimes with Crimes DB by code
       // TODO: for each district create list of categories of commited crimes
       // TODO: resulting RDD assign to result value
-
-
- /*     // Map commited crimes with it's codes
-      val codesCommited = commited.map(line => {
-        val cols = line.split(",")
-        // column 6 contains code
-        (CommitedCrime(cols(0), cols(1), cols(2), cols(3), cols(4), cols(5), cols(6), cols(7), cols(8)))
-      })*/
 
       val districtCategories: RDD[(String, String)] = commited.map(line => {
         val cols = line.split(",")
@@ -228,47 +204,8 @@ object App extends SparkSupport {
         .join(crimes)
         .map { case rdd => (rdd._2._1, rdd._2._2)}
 
-
-        //: Map[String, Long]
-
       val dcCount = districtCategories.reduceByKey(_ + "," + _, 6)
 
-
-
-      //val joinedCrimes: RDD[(String, String)] = crimesCommited.join(crimes)
-       // .map { case rdd => (rdd._2._1, rdd._2._2)}
-/*
-      /*val committedwCols = codesCommited.map(commitedCrime =>
-        (commitedCrime.ucr_ncic_code, commitedCrime.cdatetime, commitedCrime.address,
-          commitedCrime.district, commitedCrime.beat, commitedCrime.grid, commitedCrime.crimedescr,
-          commitedCrime.ucr_ncic_code, commitedCrime.latitude, commitedCrime.longitude))
-
-      // creating commited crimes dataframe
-      val dfCommitted2 = spark.createDataFrame(committedwCols).toDF("id", "b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9")
-      */
-
-      val committedwCols = codesCommited.map(commitedCrime =>
-        (commitedCrime.ucr_ncic_code, commitedCrime.district))
-
-      // creating commited crimes dataframe
-      val dfCommitted2 = spark.createDataFrame(committedwCols).toDF("id", "b3")
-
-      /*val dfCommitted = dfCommitted2.repartition(5).persist() // there are 6 districts with evenly split records but results were slower than with 2*/
-      val dfCommitted = dfCommitted2.repartitionByRange(6, col("b3"))
-      // println(dfCommitted.columns)
-
-      val joinedCrimes = dfCommitted.join(dfCrimes, "id")
-      //println(joinedCrimes.show())
-
-      joinedCrimes.createOrReplaceTempView("crimesTemp")
-
-
-      val resultdf = spark.sql("""
-        SELECT b3 AS district, a2 AS category, COUNT(id)
-        FROM crimesTemp
-        GROUP BY district, category
-        """
-      )*/
       val result = dcCount
 
        /**/
@@ -345,11 +282,14 @@ object App extends SparkSupport {
                    no significant changes after changing reduceByKey to aggregateByKey
 
 
-    optimalCode2:  joining Spark DataFrames and running sql query had significantly slower
-                   performance than RDD operations. Time difference ~ -23 seconds.
-                   When I applied repartitionByRange difference decreased to -9 seconds.
-                   Adding persist() to dataframes did not improve the results.
+    optimalCode2:  3833182817 ns before optimisation
+      optimised code by:
+        - filtering out unnecessary columns from both tables before joining them
+        - applying partitioning to CommitedCrimes RDD before the join
 
+    optimalCode2:  2619252468 ns after optimisation
+
+    Performance difference between initial and optimised code is  1.213930349 seconds
      */
 
   }
